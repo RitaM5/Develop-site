@@ -4,9 +4,11 @@ import { HiOutlineMail } from 'react-icons/hi';
 import { BsPhone, BsMessenger, BsFacebook, BsInstagram, BsLinkedin } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 import './Header.css'
+import Banner from './Banner';
+import Home from '../../Home/Home/Home';
 const Header = () => {
     return (
-        <>
+        <div>
             <section style={{ background: '#00796b', fontSize: 14, height: 40, transition: 'all 0.5' }}>
                 <Container>
                     <div className='d-flex justify-content-between p-2 text-white'>
@@ -15,50 +17,39 @@ const Header = () => {
                             <p><BsPhone />+1 5589 55488 55</p>
                         </div>
                         <div className='d-flex gap-4'>
-                            <span><BsMessenger /></span>
-                            <span><BsFacebook /></span>
-                            <span><BsInstagram /></span>
-                            <span><BsLinkedin /></span>
+                            <a href='/#' className='text-white fs-6'><BsMessenger /></a>
+                            <a href='/#' className='text-white fs-6'><BsFacebook /></a>
+                            <a href='/#' className='text-white fs-6'><BsInstagram /></a>
+                            <a href='/#' className='text-white fs-6'><BsLinkedin /></a>
                         </div>
                     </div>
                 </Container>
             </section>
             <header>
                 <Navbar collapseOnSelect expand="lg" sticky='top' variant="dark" className="nav-menu pt-3">
-                    <Container className='d-flex justify-content-between'>
-                        <Navbar.Brand as={Link} to="/">
-                            <h1 className='ms-2 fs-2'>Develop</h1>
+                    <Container>
+                        <Navbar.Brand>
+                            <h1 className=' fs-2'>Develop</h1>
                         </Navbar.Brand>
-                        <div>
-                            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                            <Navbar.Collapse id="responsive-navbar-nav" className="ms-4">
-                                <Nav className="fs-4 fw-bold me-2">
-                                    <Nav.Link as={Link} to="/home" style={{fontSize:18}} className="active"><span className='menu'>Home</span></Nav.Link>
-                                </Nav>
-                                <Nav className="fs-4 fw-bold me-2">
-                                    <Nav.Link as={Link} to="/about" style={{fontSize:18}}>About</Nav.Link>
-                                </Nav>
-                                <Nav className="fs-4 fw-bold me-2">
-                                    <Nav.Link as={Link} to="/services" style={{fontSize:18}}>Services</Nav.Link>
-                                </Nav>
-                                <Nav className="fs-4 fw-bold me-2">
-                                    <Nav.Link as={Link} to="/portfolio" style={{fontSize:18}}>Portfolio</Nav.Link>
-                                </Nav>
-                                <Nav className="fs-4 fw-bold me-2 ">
-                                    <Nav.Link as={Link} to="/team" style={{fontSize:18}}>Team</Nav.Link>
-                                </Nav>
-                                <Nav className="fs-4 fw-bold me-2">
-                                    <Nav.Link as={Link} to="/blog"style={{fontSize:18}}>Blog</Nav.Link>
-                                </Nav>
-                                <Nav className="fs-4 fw-bold">
-                                    <Nav.Link as={Link} to="/contact"style={{fontSize:18}}>Contact</Nav.Link>
-                                </Nav>
-                            </Navbar.Collapse>
-                        </div>
+                        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                        <Navbar.Collapse id="responsive-navbar-nav" className="ms-auto" >
+                            <Nav className=" ms-auto fs-4 fw-bold me-2">
+                                <Nav.Link as={Link} to="/home" style={{ fontSize: 18 }} className="active"><span className='menu'>Home</span></Nav.Link>
+                                <Nav.Link as={Link} to="/about" style={{ fontSize: 18 }}><span className='menu'>About</span></Nav.Link>
+                                <Nav.Link as={Link} to="/services" style={{ fontSize: 18 }}><span className='menu'>Services</span></Nav.Link>
+                                <Nav.Link as={Link} to="/portfolio" style={{ fontSize: 18 }}><span className='menu'>Portfolio</span></Nav.Link>
+                                <Nav.Link as={Link} to="/team" style={{ fontSize: 18 }}><span className='menu'>Team</span></Nav.Link>
+                                <Nav.Link as={Link} to="/blog" style={{ fontSize: 18 }}><span className='menu'>Blog</span></Nav.Link>
+                                <Nav.Link as={Link} to="/contact" style={{ fontSize: 18 }}><span className='menu'>Contact</span></Nav.Link>
+                            </Nav>
+                        </Navbar.Collapse>
                     </Container>
                 </Navbar>
             </header>
-        </>
+            <div className='home-section'>
+                <Home />
+            </div>
+        </div>
     )
 }
 

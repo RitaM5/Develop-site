@@ -1,5 +1,8 @@
 header{
-    background-color: #008374;
+    background-color: #018777;
+}
+.menu{
+    transition: all 0.1s ease-in-out;
 }
 .menu:hover{
 border-bottom: 2px solid red;
