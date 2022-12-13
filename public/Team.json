@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "img": "image/team/team-1.jpg",
+        "name":"Walter White",
+        "title": "Web Development"
+    },
+    {
+        "id": 2,
+        "img": "image/team/team-2.jpg",
+        "name":"Sarah Jhinson",
+        "title": "Marketing"
+    },
+    {
+        "id": 3,
+        "img": "image/team/team-3.jpg",
+        "name":"William Anderson",
+        "title": "Content"
+    },
+    {
+        "id": 1,
+        "img": "image/team/team-4.jpg",
+        "name":"Amanda Jepson",
+        "title": "Accountant"
+    }
+]

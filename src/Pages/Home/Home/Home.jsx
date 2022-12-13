@@ -5,6 +5,7 @@ import { MdPlayCircleFilled } from 'react-icons/md';
 import Client from '../../../../public/Utilites/Client';
 import HomeAbout from '../../../../public/Utilites/HomeAbout';
 import HomeServices from '../../../../public/Utilites/HomeServices';
+import Team from '../../Team/Team';
 import './Home.css'
 import IconBox from './IconBox';
 const Home = () => {
@@ -30,7 +31,8 @@ const Home = () => {
       <IconBox />
       <HomeServices />
       <HomeAbout />
-      <Client/>
+      <Client/> 
+      <Team/>
     </>
   )
 }

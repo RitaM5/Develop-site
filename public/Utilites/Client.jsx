@@ -5,14 +5,31 @@ import 'swiper/css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 const Client = () => {
     return (
-        <>
-            <Container data-aos="zoom-out">
+        <div>
+            <Container className="text-center" data-aos="zoom-out">
                 <div className="py-5">
                     <Swiper
-                        spaceBetween={5}
-                        slidesPerView={5}
-                        onSlideChange={() => console.log('slide change')}
-                        onSwiper={(swiper) => console.log(swiper)}
+                    breakpoints={{
+                        0: {
+                            slidesPerView:1,
+                            spaceBetween:10,
+                        },
+                        480: {
+                            slidesPerView:3,
+                            spaceBetween:10,
+                        },
+                        768: {
+                            slidesPerView:5,
+                            spaceBetween:10,
+                        },
+                      
+                        1200: {
+                            slidesPerView:6,
+                            spaceBetween:10,
+                        }
+                    }}
+                      onSlideChange={() => console.log('slide change')}
+                      onSwiper={(swiper) => console.log(swiper)}
                     >
                         <SwiperSlide>
                             <img src="image/clients/client-1.png" className="img-fluid" style={{ width: 100 }} alt="" />
@@ -42,7 +59,7 @@ const Client = () => {
                 </div>
 
             </Container>
-        </>
+        </div>
     )
 }
 

@@ -16,7 +16,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className="">
+    <div className="App">
       <Header/>
       <Routes>
         <Route path='/' element={<Home/>}></Route>
