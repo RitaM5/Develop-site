@@ -1,3 +1,9 @@
 .home-section{
     background-color: #018777;
 }
+.title{
+    text-decoration: none;
+    color:aliceblue;
+    font-weight:bold;
+    font-size: 18px;
+}

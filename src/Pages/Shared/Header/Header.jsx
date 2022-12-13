@@ -4,8 +4,7 @@ import { HiOutlineMail } from 'react-icons/hi';
 import { BsPhone, BsMessenger, BsFacebook, BsInstagram, BsLinkedin } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 import './Header.css'
-import Banner from './Banner';
-import Home from '../../Home/Home/Home';
+//import Home from '../../Home/Home/Home';
 const Header = () => {
     return (
         <div>
@@ -26,7 +25,7 @@ const Header = () => {
                 </Container>
             </section>
             <header>
-                <Navbar collapseOnSelect expand="lg" sticky='top' variant="dark" className="nav-menu pt-3">
+                <Navbar collapseOnSelect expand="lg" sticky='top'  variant="dark" className="nav-menu pt-3">
                     <Container>
                         <Navbar.Brand>
                             <h1 className=' fs-2'>Develop</h1>
@@ -46,9 +45,6 @@ const Header = () => {
                     </Container>
                 </Navbar>
             </header>
-            <div className='home-section'>
-                <Home />
-            </div>
         </div>
     )
 }
