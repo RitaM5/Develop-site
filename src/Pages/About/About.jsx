@@ -1,9 +1,10 @@
 import React from 'react'
-
+import HomeAbout from '../../../public/Utilites/HomeAbout'
+import './About.css'
 const About = () => {
   return (
     <div>
-        <h1>this is about</h1>
+      <HomeAbout/>
     </div>
   )
 }

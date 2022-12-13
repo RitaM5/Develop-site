@@ -2,7 +2,8 @@ import React from 'react'
 import { Container } from 'react-bootstrap'
 import Button from 'react-bootstrap/Button';
 import { BsPlayCircle } from 'react-icons/bs';
-import Services from '../../Services/Services';
+import HomeAbout from '../../../../public/Utilites/HomeAbout';
+import HomeServices from '../../../../public/Utilites/HomeServices';
 import './Home.css'
 import IconBox from './IconBox';
 const Home = () => {
@@ -26,7 +27,8 @@ const Home = () => {
         </Container>
       </div>
       <IconBox />
-      <Services/>
+      <HomeServices />
+      <HomeAbout />
     </>
   )
 }

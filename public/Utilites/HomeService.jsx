@@ -1,15 +1,6 @@
 import React from 'react'
 
-const Service = () => {
-  return (
-    <div>Service</div>
-  )
-}
-
-export default Service
-/* import React from 'react'
-
-const Service = (props) => {
+const HomeService = (props) => {
     console.log(props);
     const{id,title,details,icon} = props.items;
     return (
@@ -29,4 +20,4 @@ const Service = (props) => {
     )
 }
 
-export default Service */
+export default HomeService
