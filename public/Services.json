@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "icon":"https://img.icons8.com/material-rounded/48/null/activity.png",
+        "title": "Nesciunt Mete",
+        "details": "Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur."
+    },
+    {
+        "id": 2,
+        "icon":"https://img.icons8.com/material-outlined/48/null/online--v2.png",
+        "title": "Eosle Commodi",
+        "details": "Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem."
+    },
+    {
+        "id": 3,
+        "icon":"https://img.icons8.com/external-thin-kawalan-studio/48/null/external-easel-education-thin-kawalan-studio-2.png",
+        "title": "Ledo Markt",
+        "details": "Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti."
+    },
+    {
+        "id": 4,
+        "icon":"https://img.icons8.com/external-those-icons-lineal-those-icons/48/null/external-Command-keyboard-those-icons-lineal-those-icons-2.png",
+        "title": "Asperiores Commodit",
+        "details": "Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque."
+    },
+    {
+        "id": 5,
+        "icon":"https://img.icons8.com/material-outlined/48/null/calendar--v3.png",
+        "title": "Velit Doloremque",
+        "details": "Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore."
+    },
+    {
+        "id": 6,
+        "icon":"https://img.icons8.com/windows/48/null/chat-message.png",
+        "title": "Dolori Architecto",
+        "details": "Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim."
+    }
+]

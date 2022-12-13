@@ -4,7 +4,6 @@ import { HiOutlineMail } from 'react-icons/hi';
 import { BsPhone, BsMessenger, BsFacebook, BsInstagram, BsLinkedin } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 import './Header.css'
-//import Home from '../../Home/Home/Home';
 const Header = () => {
     return (
         <div>

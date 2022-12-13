@@ -1,0 +1,15 @@
+.service-sec{
+    background-color: #f6f6f6;
+}
+.section-header{
+    border-bottom: 3px solid #00796b;
+    width:50px;
+    margin: 0 auto;
+}
+.title-border{
+    border-bottom: 3px solid rgb(221, 213, 213);
+    width:220px;
+}
+.readmore{
+    text-decoration: none;
+}
