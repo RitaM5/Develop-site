@@ -1,7 +1,8 @@
 import React from 'react'
 import { Container, Nav, Navbar } from 'react-bootstrap'
 import { HiOutlineMail } from 'react-icons/hi';
-import { BsPhone, BsMessenger, BsFacebook, BsInstagram, BsLinkedin } from 'react-icons/bs';
+import { FiPhone,} from 'react-icons/fi';
+import {FaFacebookMessenger,FaFacebook,FaInstagram,FaLinkedinIn} from 'react-icons/fa'
 import { Link } from 'react-router-dom';
 import './Header.css'
 const Header = () => {
@@ -12,13 +13,13 @@ const Header = () => {
                     <div className='d-flex justify-content-between p-2 text-white'>
                         <div className='d-flex gap-4 align-items-center'>
                             <p><HiOutlineMail className='me-2' />contact@example.com</p>
-                            <p><BsPhone />+1 5589 55488 55</p>
+                            <p><FiPhone />+1 5589 55488 55</p>
                         </div>
                         <div className='d-flex gap-4'>
-                            <a href='/#' className='text-white fs-6'><BsMessenger /></a>
-                            <a href='/#' className='text-white fs-6'><BsFacebook /></a>
-                            <a href='/#' className='text-white fs-6'><BsInstagram /></a>
-                            <a href='/#' className='text-white fs-6'><BsLinkedin /></a>
+                            <a href='/#' className='text-white fs-6'><FaFacebookMessenger /></a>
+                            <a href='/#' className='text-white fs-6'><FaFacebook /></a>
+                            <a href='/#' className='text-white fs-6'><FaInstagram /></a>
+                            <a href='/#' className='text-white fs-6'><FaLinkedinIn /></a>
                         </div>
                     </div>
                 </Container>

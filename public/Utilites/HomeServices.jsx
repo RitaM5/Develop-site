@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Container } from 'react-bootstrap'
 import HomeService from './HomeService';
-//import Service from './Service';
-//import './Services.css'
 const HomeServices = () => {
   const [services, setServices] = useState([]);
   useEffect(() => {
