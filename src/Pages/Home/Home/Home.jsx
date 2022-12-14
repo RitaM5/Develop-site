@@ -25,8 +25,8 @@ const Home = () => {
   return (
     <>
       <div className='home-section'>
-        <Container>
-          <div className="row gy-5 align-items-center" data-aos='fade-in'>
+        <Container className='py-5'>
+          <div className="row gy-5 align-items-center pt-4" data-aos='fade-in'>
             <div className="col-lg-6 order-2 order-lg-1">
               <h2 className='text-white fs-1 fw-bold'>Welcome to <span>Impact</span></h2>
               <p className="text-white">Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas beatae cumque eum quaerat.</p>

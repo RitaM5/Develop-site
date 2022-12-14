@@ -1,5 +1,8 @@
-header{
-    background-color: #018777;
+.header{
+    background-color:rgb(31, 65, 31);
+}
+.sticky-sec{
+    background-color: green;
 }
 .menu{
     transition: all 0.1s ease-in-out;

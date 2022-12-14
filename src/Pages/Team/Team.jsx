@@ -9,7 +9,7 @@ const Team = () => {
       .then(data => setTeams(data))
   }, [])
   return (
-    <div className='py-5'>
+    <div className='py-5 mt-5'>
       <Container data-aos="fade-up">
         <div className="text-center">
           <h2 className='fw-bold'>Our Team</h2>

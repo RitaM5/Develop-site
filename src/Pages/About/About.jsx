@@ -7,7 +7,9 @@ import './About.css'
 const About = () => {
   return (
     <>
+      <div className='pt-5'>
       <HomeAbout />
+      </div>
       {/* Frequently Asked Questions Section */}
       <Container className='py-5'>
         <div className="row " data-aos="fade-up">

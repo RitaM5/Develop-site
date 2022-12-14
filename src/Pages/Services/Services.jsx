@@ -3,7 +3,7 @@ import HomeServices from '../../../public/Utilites/HomeServices'
 import './Services.css'
 const Services = () => {
   return (
-    <div>
+    <div className='pt-5'>
       <HomeServices/>
     </div>
   )
