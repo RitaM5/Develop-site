@@ -11,7 +11,7 @@ import Footer from './Pages/Shared/Footer/Footer'
 import Header from './Pages/Shared/Header/Header'
 import NoFound from './Pages/Shared/NoFound/NoFound'
 import Team from './Pages/Team/Team'
-
+//import Theme from './Pages/Theme/Theme'
 function App() {
   const [count, setCount] = useState(0)
 

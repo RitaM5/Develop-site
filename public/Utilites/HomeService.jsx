@@ -6,7 +6,7 @@ const HomeService = (props) => {
     return (
         <>
             <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                <div className="card h-100 border-0 p-4" style={{ backgroundColor: '#fff' }}>
+                <div className="card h-100 border-0 p-4" style={{ backgroundColor:'lightgrey' }}>
                     <div className="card-body">
                         <img className='py-3' src={icon} alt=""/>
                         <h5 className='fw-bold'>{title}</h5>

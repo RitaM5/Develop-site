@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Container } from 'react-bootstrap'
 import Button from 'react-bootstrap/Button';
 import { MdPlayCircleFilled } from 'react-icons/md';
@@ -9,6 +9,19 @@ import Team from '../../Team/Team';
 import './Home.css'
 import IconBox from './IconBox';
 const Home = () => {
+  const [theme, setTheme] = useState("light-theme");
+  useEffect(() => {
+    document.body.className = theme;
+  }, [theme])
+  const toggleTheme = (theme) => {
+    if (theme === "dark-theme") {
+      setTheme('light-theme');
+    }
+    else {
+      setTheme('dark-theme');
+    }
+
+  }
   return (
     <>
       <div className='home-section'>
@@ -17,9 +30,10 @@ const Home = () => {
             <div className="col-lg-6 order-2 order-lg-1">
               <h2 className='text-white fs-1 fw-bold'>Welcome to <span>Impact</span></h2>
               <p className="text-white">Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas beatae cumque eum quaerat.</p>
-              <div className='d-flex gap-3 pt-3 py-3'>
-                <Button href="#about" variant='outline-secondary ' className="btn btn-get-started text-white px-4 p-2 rounded-5 border-white">Get Started</Button>
+              <div className='d-flex pt-3 py-3 g-2 align-items-center'>
+                <Button href="#about" variant='outline-secondary ' className="btn btn-get-started text-white px-4  rounded-5 border-white">Get Started</Button>
                 <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" className="btn text-white glightbox btn-watch-video d-flex align-items-center "><span className='me-2 fs-5'></span><MdPlayCircleFilled />Watch Video</a>
+                <Button href="#about" variant='outline-secondary ' className="btn btn-get-started text-white px-4 rounded-5 border-white" onClick={() => toggleTheme(theme)}>Theme</Button>
               </div>
             </div>
             <div className="col-lg-6 order-1 order-lg-2">
@@ -31,8 +45,8 @@ const Home = () => {
       <IconBox />
       <HomeServices />
       <HomeAbout />
-      <Client/> 
-      <Team/>
+      <Client />
+      <Team />
     </>
   )
 }
