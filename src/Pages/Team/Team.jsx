@@ -11,16 +11,19 @@ const Team = () => {
   return (
     <div className='py-5 mt-5'>
       <Container data-aos="fade-up">
-        <div className="text-center">
-          <h2 className='fw-bold'>Our Team</h2>
-          <div className='section-header my-3'></div>
-          <p>Nulla dolorum nulla nesciunt rerum facere sed ut inventore quam porro nihil id ratione ea sunt quis dolorem dolore earum</p>
+        <div className='pt-5'>
+          <div className="text-center">
+            <h2 className='fw-bold'>Our Team</h2>
+            <div className='section-header my-3'></div>
+            <p>Nulla dolorum nulla nesciunt rerum facere sed ut inventore quam porro nihil id ratione ea sunt quis dolorem dolore earum</p>
+          </div>
+          <div className="row g-2 pt-5">
+            {
+              teams.map(single => <SingleTeam singleData={single} />)
+            }
+          </div>
         </div>
-        <div className="row g-2 pt-5">
-          {
-            teams.map(single=><SingleTeam singleData={single}/>)
-          }
-        </div>
+
       </Container>
     </div>
   )

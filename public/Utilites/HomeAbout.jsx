@@ -3,7 +3,7 @@ import { Container } from 'react-bootstrap'
 import { HiCheckCircle } from 'react-icons/hi';
 const HomeAbout = () => {
     return (
-        <div className='about'>
+        <div className='about mt-5'>
             <Container className='pt-5' data-aos="fade-up">
                 <div className="text-center">
                     <h2 className='fw-bold'>About Us</h2>
