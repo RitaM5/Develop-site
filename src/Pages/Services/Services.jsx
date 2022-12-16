@@ -58,7 +58,7 @@ const Services = () => {
         </div>
       </Container>
       <section className='silks py-5 mt-5'>
-        <Container>
+        <Container  data-aos="fade-up" data-aos-delay="100">
           <div className="p-4 py-5">
             <Slider {...settings}>
               {
