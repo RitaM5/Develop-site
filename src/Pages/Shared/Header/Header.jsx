@@ -51,9 +51,7 @@ const Header = () => {
                                         <Nav.Link as={Link} to="/home" style={{ fontSize: 18 }} className="active"><span className='menu'>Home</span></Nav.Link>
                                         <Nav.Link as={Link} to="/about" style={{ fontSize: 18 }}><span className='menu'>About</span></Nav.Link>
                                         <Nav.Link as={Link} to="/services" style={{ fontSize: 18 }}><span className='menu'>Services</span></Nav.Link>
-                                        <Nav.Link as={Link} to="/portfolio" style={{ fontSize: 18 }}><span className='menu'>Portfolio</span></Nav.Link>
-                                        <Nav.Link as={Link} to="/team" style={{ fontSize: 18 }}><span className='menu'>Team</span></Nav.Link>
-                                        <Nav.Link as={Link} to="/blog" style={{ fontSize: 18 }}><span className='menu'>Blog</span></Nav.Link>
+                                        <Nav.Link as={Link} to="/team" style={{ fontSize: 18 }}><span className='menu'>Team</span></Nav.Link>               
                                         <Nav.Link as={Link} to="/contact" style={{ fontSize: 18 }}><span className='menu'>Contact</span></Nav.Link>
                                         <p className='ms-5 pt-1'><Button href="#about" variant='outline-secondary ' className="btn btn-get-started text-white rounded-5 border-white text-center" onClick={() => toggleTheme(theme)}>Theme</Button></p>
                                     </Nav>
@@ -68,3 +66,8 @@ const Header = () => {
 }
 
 export default Header
+/* 
+<Nav.Link as={Link} to="/blog" style={{ fontSize: 18 }}><span className='menu'>Blog</span></Nav.Link>
+
+
+*/
